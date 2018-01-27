@@ -1,8 +1,7 @@
-def wprowadzaj():
-    email = raw_input("Podaj adres: ")
-    if "@" in email:
-        print "Twoj e-mail to: " + email
-    else:
-        print "Zly adres!"
-        wprowadzaj()
+a = 0
+b = float(input("podaj wartosc godziny "))
 
+while a <= 60:
+    wynik = 5.5 * a - 30 * b
+    a += 1
+    print(wynik)
