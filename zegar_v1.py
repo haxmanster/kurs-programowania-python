@@ -7,6 +7,15 @@ print("|////////////////////////////////////////////////////////////////////////
 
 print ("Witaj w moim programie do obliczania kata ktory tworza wskazowki zegara na tarczy ")
 
+
+def NormalizacjaKata(godzina, minuta):
+  if a - b < 0:
+    return -c
+  if a - b >= 180:
+    return 360 - c
+  else:
+    return c
+
 wybor = "t"
 t = str(wybor)
 while wybor == "t":
@@ -16,14 +25,8 @@ while wybor == "t":
   a = stala * minuta
   b = (30 * godzina)
   c = a - b
-  def WartoscBezwgledna(godzina,minuta):
-    if a - b < 0:
-      return -c
-    if a - b >= 180:
-      return 360 -c
-    else:
-      return c
-  print("Kąt pomiedzy wskazówkami zegara wynosi : ", WartoscBezwgledna(godzina,minuta))
+
+  print("Kąt pomiedzy wskazówkami zegara wynosi : ", NormalizacjaKata(godzina,minuta))
   wybor = str(input("Jeszcze raz (t/n)? "))
 print ("bye")
 
