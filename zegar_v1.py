@@ -10,12 +10,13 @@ print ("Witaj w moim programie do obliczania kata ktory tworza wskazowki zegara 
 
 def normalizacja_kata(godzina, minuta):
   if suma_katow > 0:
-    if suma_katow < 0:
-     return suma_katow
+    if suma_katow:
+      return suma_katow
+    return suma_katow
   if suma_katow < -180:
-     return suma_katow + 360
-  if suma_katow > 180:
-     return suma_katow
+    return suma_katow + 360
+  if suma_katow >= 180:
+    return suma_katow
   return -suma_katow
 
 wybor = "t"
@@ -32,5 +33,3 @@ while wybor == "t":
   print("Kąt pomiedzy wskazówkami zegara wynosi : ", normalizacja_kata(godzina,minuta))
   wybor = str(input("Jeszcze raz (t/n)? "))
 print ("bye")
-
-
