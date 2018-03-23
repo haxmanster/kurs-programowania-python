@@ -19,12 +19,11 @@ def normalizacja_kata():
     return suma_katow
   return -suma_katow
 
-def limit():
-  if godzina > 25:
-    return "Podałeś za dużo godzin. Doba ma 24 godziny !"
-  if minuta > 60:
-    return "Podałes za duzo minut . Godzina ma tylko 60 !"
-
+def limit(godzina,minuta):
+  if godzina < 25:
+    if minuta < 60:
+      return normalizacja_kata()
+  return "Podałes nie własciwy zakres ninut i godzin ! Minuta może mieć maks 60 a godziny mak 24"
 
 
 wybor = "t"
@@ -36,6 +35,6 @@ while wybor == "t":
   kat_minuty = stala * minuta
   kat_godziny = (30 * godzina)
   suma_katow = kat_minuty - kat_godziny
-  print("Kąt pomiedzy wskazówkami zegara wynosi : ", normalizacja_kata())
+  print("Kąt pomiedzy wskazówkami zegara wynosi : ",limit(godzina,minuta))
   wybor = str(input("Jeszcze raz (t/n)? "))
 print ("bye")
