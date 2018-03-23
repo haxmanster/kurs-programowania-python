@@ -8,9 +8,9 @@ print("|////////////////////////////////////////////////////////////////////////
 print ("Witaj w moim programie do obliczania kata ktory tworza wskazowki zegara na tarczy ")
 
 
-def normalizacja_kata(godzina, minuta):
+def normalizacja_kata():
   if suma_katow > 0:
-    if suma_katow:
+    if suma_katow < 0:
       return suma_katow
     return suma_katow
   if suma_katow < -180:
@@ -18,6 +18,14 @@ def normalizacja_kata(godzina, minuta):
   if suma_katow >= 180:
     return suma_katow
   return -suma_katow
+
+def limit():
+  if godzina > 25:
+    return "Podałeś za dużo godzin. Doba ma 24 godziny !"
+  if minuta > 60:
+    return "Podałes za duzo minut . Godzina ma tylko 60 !"
+
+
 
 wybor = "t"
 t = str(wybor)
@@ -28,8 +36,6 @@ while wybor == "t":
   kat_minuty = stala * minuta
   kat_godziny = (30 * godzina)
   suma_katow = kat_minuty - kat_godziny
-
-
-  print("Kąt pomiedzy wskazówkami zegara wynosi : ", normalizacja_kata(godzina,minuta))
+  print("Kąt pomiedzy wskazówkami zegara wynosi : ", normalizacja_kata())
   wybor = str(input("Jeszcze raz (t/n)? "))
 print ("bye")
