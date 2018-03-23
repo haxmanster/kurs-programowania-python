@@ -7,6 +7,17 @@ print("|////////////////////////////////////////////////////////////////////////
 
 print ("Witaj w moim programie do obliczania kata ktory tworza wskazowki zegara na tarczy ")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+def limit(godzina,minuta):
+  if godzina < 25 and minuta < 60:
+      return normalizacja_kata()
+  return "Podałes nie własciwy zakres ninut i godzin ! Minuta może mieć maks 60 a godziny mak 24"
+
+=======
+>>>>>>> 7248da98491fb78349e26e4cc0ef973d1a614cf5
+=======
+>>>>>>> 7248da98491fb78349e26e4cc0ef973d1a614cf5
 
 def normalizacja_kata():
   if suma_katow > 0:
@@ -19,6 +30,11 @@ def normalizacja_kata():
     return suma_katow
   return -suma_katow
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7248da98491fb78349e26e4cc0ef973d1a614cf5
 def limit(godzina,minuta):
   if godzina < 25:
     if minuta < 60:
@@ -26,6 +42,10 @@ def limit(godzina,minuta):
   return "Podałes nie własciwy zakres ninut i godzin ! Minuta może mieć maks 60 a godziny mak 24"
 
 
+<<<<<<< HEAD
+>>>>>>> 7248da98491fb78349e26e4cc0ef973d1a614cf5
+=======
+>>>>>>> 7248da98491fb78349e26e4cc0ef973d1a614cf5
 wybor = "t"
 t = str(wybor)
 while wybor == "t":
