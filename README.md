@@ -1,1 +1,2 @@
-# kurs-programowania-python
+### kurs-programowania-python
+Wypociny w pythonie
