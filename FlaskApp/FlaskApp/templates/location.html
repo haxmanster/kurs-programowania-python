@@ -2,6 +2,9 @@
   
 {% block content %}
   <h2>Server Info</h2>
-  <p>{{platform}}</p>
-
+<div>
+{% for x in platform() %}
+    <p>{{x[0::]}}</p>
+    {% endfor %}
+</div>
 {% endblock %}

@@ -34,8 +34,8 @@ status = [platform.uname()]
 
 def platform():
     for info in status:
-      return info
-  return
+        return info[:7]
+    return
 
 app.jinja_env.globals.update(platform=platform)
 
